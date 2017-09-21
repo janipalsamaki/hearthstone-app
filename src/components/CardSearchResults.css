@@ -1,0 +1,29 @@
+.CardSearchResults {
+  background-color: white;
+}
+
+.rt-tr-group:hover {
+  cursor: pointer;
+}
+
+/* Rarity */
+
+.common {
+  color: #000000;
+}
+
+.epic {
+  color: #A330C9;
+}
+
+.free {
+  color: #000000;
+}
+
+.legendary {
+  color: #FF7D0A;
+}
+
+.rare {
+  color: #0070DE;
+}
