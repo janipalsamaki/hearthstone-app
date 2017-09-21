@@ -25,12 +25,12 @@ class CardSearchResults extends Component {
               {
                 Header: 'Type',
                 accessor: 'type',
-                maxWidth: 120
+                maxWidth: 70
               },
               {
                 Header: 'Class',
                 accessor: 'cardClass',
-                maxWidth: 110
+                maxWidth: 80
               },
               {
                 Header: 'Mana',
