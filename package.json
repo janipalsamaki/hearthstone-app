@@ -3,18 +3,21 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
-    "react-scripts": "1.0.13"
+    "react-scripts": "1.1.1",
+    "gh-pages": "^1.1.0"
   },
   "dependencies": {
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1",
-    "react-table": "^6.5.3"
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-table": "^6.8.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "homepage": "http://palsamaki.com/hearthstone-app/"
+  "homepage": "https://janipalsamaki.github.io/hearthstone-app"
 }
