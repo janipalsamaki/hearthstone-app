@@ -4,5 +4,5 @@
   left: 50%;
   transform: translate(-50%, -50%);
   cursor: pointer;
-  background: url('../images/spinner.gif') no-repeat center;
+  background: url('../../images/spinner.gif') no-repeat center;
 }

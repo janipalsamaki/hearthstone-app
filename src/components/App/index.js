@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
-import AppHeader from './AppHeader'
-import AppLogo from './AppLogo'
-import CardDetails from './CardDetails'
-import CardSearch from './CardSearch'
-import CardSearchResults from './CardSearchResults'
-import cards from '../cards/cards.json'
+import AppHeader from '../AppHeader'
+import AppLogo from '../AppLogo'
+import CardDetails from '../CardDetails'
+import CardSearch from '../CardSearch/CardSearch'
+import CardSearchResults from '../CardSearchResults'
+import cards from '../../cards/cards.json'
 import './App.css'
 
 class App extends Component {
