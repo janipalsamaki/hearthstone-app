@@ -3,12 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
-    "react-scripts": "1.1.4",
-    "gh-pages": "1.2.0"
+    "react-scripts": "^3.0",
+    "gh-pages": "^2.0"
   },
   "dependencies": {
-    "react": "16.4.1",
-    "react-dom": "16.4.1",
+    "react": "^16.8",
+    "react-dom": "^16.8",
     "react-table": "6.8.6"
   },
   "scripts": {
@@ -19,5 +19,17 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "homepage": "https://janipalsamaki.github.io/hearthstone-app"
+  "homepage": "https://janipalsamaki.github.io/hearthstone-app",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
