@@ -1,15 +1,6 @@
-import React, { Component } from 'react'
+import React from 'react'
 import './AppHeader.css'
 
-class AppHeader extends Component {
-
-  render() {
-    return (
-      <div className="AppHeader">
-        {this.props.children}
-      </div>
-    )
-  }
-}
+const AppHeader = ({ children }) => <div className="AppHeader">{children}</div>
 
 export default AppHeader

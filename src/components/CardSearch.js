@@ -1,15 +1,10 @@
-import React, { Component } from 'react'
+import React from 'react'
 import './CardSearch.css'
 
-class CardSearch extends Component {
-
-  render() {
-    return (
-      <div className="CardSearch">
-        <input type="text" onChange={this.props.handleSearch}/>
-      </div>
-    );
-  }
-}
+const CardSearch = ({ handleSearch }) => (
+  <div className="CardSearch">
+    <input type="text" onChange={handleSearch} />
+  </div>
+)
 
 export default CardSearch

@@ -1,26 +1,17 @@
-import React, { Component } from 'react'
+import React from 'react'
 import './CardDetails.css'
 
-class CardDetails extends Component {
+const CardDetails = ({ card, closeCardDetails }) => (
+  <div className="CardDetails" onClick={closeCardDetails}>
+    {getImage(card)}
+  </div>
+)
 
-  constructor(props) {
-    super(props)
-    this.getImage = this.getImage.bind(this)
-  }
+const getImage = card => {
+  const baseUrl = 'https://art.hearthstonejson.com/v1/render/latest/enUS/256x'
+  const src = `${baseUrl}/${card.id}.png`
 
-  render() {
-    return (
-      <div className="CardDetails" onClick={this.props.closeCardDetails}>
-        {this.getImage(this.props.card)}
-      </div>
-    );
-  }
-
-  getImage(card) {
-    const src = `https://art.hearthstonejson.com/v1/render/latest/enUS/256x/${card.id}.png`
-
-    return  <img src={src} alt={card.name} width="256" height="369"/>
-  }
+  return <img src={src} alt={card.name} width="256" height="369" />
 }
 
 export default CardDetails
